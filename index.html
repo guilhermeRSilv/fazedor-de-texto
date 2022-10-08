@@ -18,13 +18,13 @@
       <h1>Fazedor de Texto</h1>
 
       <div>
-        <ul class="menu">
+        <ul id="menu">
           <li id="nome-arquivo"><input type="text" placeholder="Arquivo sem nome" autofocus /></li>
           <li>
-            <button>Salvar</button>
+            <button id="botao_salvar">Salvar</button>
           </li>
           <li>
-            <button><i class="fa-solid fa-print"></i> Imprimir</button>
+            <button id="botao_imprimir"><i class="fa-solid fa-print"></i> Imprimir</button>
           </li>
           <li>
             <button><i class="fa-solid fa-paperclip"></i> Importar</button>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="meiota">
-      <ul class="ferramentas">
+      <ul id="ferramentas">
         <li>
           <button><i class="fa-solid fa-paint-roller"></i></button>
         </li>
@@ -45,9 +45,9 @@
           <button><i class="fa-solid fa-minus"></i></button><input type="text" /><button><i class="fa-solid fa-plus"></i></button>
         </li>
         <li><button id="botao_negrito">negrito</button></li>
-        <li><button>italico</button></li>
+        <li><button id="botao_italico">italico</button></li>
         <li>
-          <button><i class="fa-solid fa-underline"></i></button>
+          <button id="botao_sublinhado"><i class="fa-solid fa-underline"></i></button>
         </li>
         <li><button>cor da fonte</button></li>
         <li>
@@ -65,6 +65,10 @@
 
     <div class="meiota">
       <textarea id="folha" name="folha" autofocus></textarea>
+    </div>
+
+    <div class="meiota" id="resultado">
+      <p id="texto_mostrado">Hello world!</p>
     </div>
 
     <script src="main.js"></script>
