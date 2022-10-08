@@ -1,16 +1,23 @@
 var neg = 0;
 var ita = 0;
 var sub = 0;
+var folha_escrita = document.getElementById('folha');
 
 function negrito () {
     if (neg == 0){
         neg = 1;
-        document.getElementById('folha').style.fontWeight = "bold";
+        // document.getElementById('folha').style.fontWeight = "bold";
+        folha_escrita.value += "<b></b>";
     } 
     else{
         neg = 0;
-        document.getElementById('folha').style.fontWeight = "normal";
-    }        
+        folha_escrita.style.fontWeight = "normal";
+    }      
+
+    console.log(folha_escrita.value.length);
+    var posicao = folha_escrita.value.length;
+    folha_escrita.focus();
+    folha_escrita.selectionStart = folha_escrita.selectionEnd = posicao - 4;
 }
 
 function sublinhado () {
